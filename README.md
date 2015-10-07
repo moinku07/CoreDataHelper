@@ -1,5 +1,5 @@
 Swift CoreData Handler to manage Core Data related tasks easily.
-
+<pre>
 <code>
 	// create managed object context with database name
 	let moc: NSManagedObjectContext = CoreDataHelper.managedObjectContext("database_name")
@@ -53,3 +53,4 @@ Swift CoreData Handler to manage Core Data related tasks easily.
     // use limit = 10 to fetch only 10 items
 	let results: [Carts] = CoreDataHelper.fetchEntities(NSStringFromClass(Carts), withPredicate: predicate, andSorter: [sorter], managedObjectContext: moc, limit: 10)
 </code>
+</pre>
